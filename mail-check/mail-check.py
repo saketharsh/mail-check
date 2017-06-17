@@ -62,7 +62,8 @@ def detailed_usage():
     print("")print("Report (and track process on fixing) bugs on " +
           "https://github.com/saketharsh/mail-check. Or simply write a mail " +
           "to Saket Harsh at sharsh[at]iit[dot]ac[dot]in")
-    
+   
+   
 
 
 

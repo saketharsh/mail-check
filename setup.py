@@ -30,8 +30,9 @@ if __name__ == "__main__":
             'get-ping = ping_me.GET:main'
             ]
         },
-        install_requires = ['phonenumbers', 'requests', 'pycrypto',
-                            'python-dateutil', 'parsedatetime'],
+        install_requires = ['urllib2', 'imaplib', 'getpass',
+                            'email', 'termcolor'],
         test_suite = 'nose.collector',
         tests_require = ['nose>=0.10.1']
     )
+    
