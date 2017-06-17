@@ -1,6 +1,6 @@
 """Release file for mail-check"""
 
-name = 'mail-check'
+name = 'mail_check'
 major = '0'
 minor = '1'
 
