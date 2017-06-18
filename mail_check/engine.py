@@ -103,6 +103,8 @@ def mail_function():
 	        			continue
 	        			f  = open( os.path.join( "~/Downloads",filename), 'w')
 	        			f.write(data)
-	        			f.close()	
+	        			f.close()
+	        	else:
+	        		print ("Exiting!")	
 	m.close()
 	m.logout()

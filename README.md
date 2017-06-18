@@ -29,10 +29,11 @@ git clone "https://github.com/saketharsh/mail-check.git"
 Currently minimal usage, for reading top 10 INBOX mail and Downloading attachments if wanted.
 
 ```
-mail-check
-Enter Username
->> sharsh
-Enter Password
->>
+$ mail_check
+$ Enter Username
+$ >> sharsh
+$ Enter Password
+$ >>
 
 ```
+![In Action](Image.png)
