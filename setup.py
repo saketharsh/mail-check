@@ -26,7 +26,8 @@ if __name__ == "__main__":
             'console_scripts': [
             'mail_check = mail_check.mail:main'
             ]
-        },        
+        },
+        setup_requires = ['termcolor','email'],             
         test_suite = 'nose.collector',
         tests_require = ['nose>=0.10.1']
     )

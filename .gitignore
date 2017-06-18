@@ -1,4 +1,5 @@
 mail_check.egg-info/
 build/
 dist/
+mail_check/__pycache__/
 

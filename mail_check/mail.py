@@ -10,24 +10,37 @@ import mail_check.engine
 
 home = os.path.expanduser("~")
 
-def main(): 
-	argparser = argparse.ArgumentParser(description="mail_check")
-	argparser.add_argument("-gh","--version", action="store_true",default= False)
-	argparser.add_argument("-v","--version", action="store_true",default= False)
-	argparser.add_argument("-e","--version", action="store_true",default= False)
-	args = argparser.parse_args()
-	process(args)
+def main():
+    """Parse the arguments using argparse package"""
+    argparser = argparse.ArgumentParser(description='mail_check')
+
+    argparser.add_argument("-e", action="store_true", default=False)
+    argparser.add_argument("-V", "--version", action="store_true",
+                           default=False)
+    argparser.add_argument("-d", "--date", action="store", dest="DATE",
+                           default=None, nargs="+")
+    argparser.add_argument("-t", "--time", action="store", dest="TIME",
+                           default=None, nargs="+")
+    argparser.add_argument("message", action="store", help="Message",
+                           default=None, nargs="*")
+    argparser.add_argument("-v", action="store_true", default=False)
+
+    args = argparser.parse_args()
+    process(args)
+
+
 
 
 def process(args):
-	if args.v:
+	if args.e:
 		detailed_usage()
 		sys.exit(2)
 	if args.version:
 		import release
 		print(release.__version__)
 		sys.exit(2)
-
+	else:
+		mail_check.engine.everythin()
 
 
 
@@ -45,7 +58,8 @@ def detailed_usage():
  /     \\__  \ |  |  |    ______ _/ ___\|  |  \_/ __ \_/ ___\|  |/ /
 |  Y Y  \/ __ \|  |  |__ /_____/ \  \___|   Y  \  ___/\  \___|    < 
 |__|_|  (____  /__|____/          \___  >___|  /\___  >\___  >__|_ \
-      \/     \/                       \/     \/     \/     \/     \/
+     
+	
 	
 	'''
 	print(image)
