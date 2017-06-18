@@ -13,7 +13,7 @@ import email, getpass, imaplib, os, urllib2
 from termcolor import colored
 prompt= ">>"
 
-def everythin():
+def mail_function():
 	def connectivity():
 		try:
 			response=urllib2.urlopen('https://webmail2.iitk.ac.in/webmail/src/login.php',timeout=20)
