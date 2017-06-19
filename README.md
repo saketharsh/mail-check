@@ -37,3 +37,11 @@ $ >>
 
 ```
 ![In Action](Image.png)
+
+## Todo
+1. To extend functionality to store username and passwords too so that user does not need to type them, but password must be cryptographically saved.
+2. Extend the functionality to send text-only mails too.
+
+
+## Contribution
+Feel free to contribute towards increasing its functionality , especially IITK students . Issues, if any can be reportd too, and corrections are welcome.
