@@ -33,9 +33,9 @@ def process(args):
 		sys.exit(2)
 	if args.version:
 		import release
-		print "Tool: ",release.name
-		print "Version: ",release.__version__
-		print "Author: ",release.__author__
+		print("Tool: ",release.name)
+		print("Version: ",release.__version__)
+		print ("Author: ",release.__author__)
 		sys.exit(2)
 	else:
 		mail_check.engine.mail_function()
@@ -44,11 +44,11 @@ def process(args):
 def detailed_usage():
 	print("Welcome to documentation of mail-check!")
 	image = '''
-   	           .__.__                   .__                   __    
+   	           .__.__                   .__                   __
   _____ _____  |__|  |             ____ |  |__   ____   ____ |  | __
  /     \\__  \ |  |  |    ______ _/ ___\|  |  \_/ __ \_/ ___\|  |/ /
-|  Y Y  \/ __ \|  |  |__ /_____/ \  \___|   Y  \  ___/\  \___|    < 
-|__|_|  (____  /__|____/          \___  >___|  /\___  >\___  >__|_ \ 
+|  Y Y  \/ __ \|  |  |__ /_____/ \  \___|   Y  \  ___/\  \___|    <
+|__|_|  (____  /__|____/          \___  >___|  /\___  >\___  >__|_ \
 
 		'''
 	print(image)
@@ -64,10 +64,3 @@ def detailed_usage():
 	print("Report (and track process on fixing) bugs on \n" +
 	      "https://github.com/saketharsh/mail-check. Or simply write a mail \n" +
 	      "to Saket Harsh at sharsh[at]iit[dot]ac[dot]in")
-
-
-
-
-
-
-
